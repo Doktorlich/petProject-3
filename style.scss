@@ -1,3 +1,31 @@
+
 @import "./src/scss/variables.scss";
 @import "./src/scss/reset-style.scss";
 @import "normalize.css";
+
+
+
+@import "src/scss/header";
+@import "src/scss/footer";
+@import "src/scss/main/main";
+
+html,
+body {
+    height: 100%;
+}
+body {
+ 
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 130%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main {
+    flex-grow: 1;
+}

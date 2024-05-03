@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    // scroll-behavior: smooth;
 }
 *,
 *::after,
@@ -13,6 +12,7 @@ html {
 }
 body {
     overflow: auto;
+    
 }
 body::-webkit-scrollbar {
     width: 1em;
@@ -38,4 +38,5 @@ a:active,
 a:link,
 a:visited {
     text-decoration: none;
+    color: inherit;
 }
