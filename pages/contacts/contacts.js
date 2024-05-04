@@ -1,1 +1,1 @@
-
+import "./main-contacts.scss";

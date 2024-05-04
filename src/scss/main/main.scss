@@ -1,5 +1,59 @@
+// --------------------------------------------------------------------- general styles
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+// --------------------------------------------------------------------- blog
+.blog {
+    padding-bottom: 150px;
+}
+.blog__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+.blog__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog__item-img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.blog__item-title {
+    flex-basis: 446px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.blog .blog__item-link {
+    background-color: #0066ff;
+    color: #ffffff;
+    padding: 4px 20px;
+}
+a.showmore-link {
+    display: block;
+    padding: 13px;
+    text-transform: uppercase;
+    background-color: #151515;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 225px;
+}
+// --------------------------------------------------------------------- general styles ^
+// --------------------------------------------------------------------- top
 .top {
     margin-top: 250px;
+
     padding-bottom: 50px;
     color: #ffffff;
     text-align: center;
@@ -25,6 +79,7 @@
     font-size: 36px;
     font-weight: 700;
 }
+// --------------------------------------------------------------------- slider
 .swiper::after {
     content: "";
     background-color: rgba(21, 21, 21, 0.3);
@@ -62,4 +117,125 @@
     height: 6px !important;
     background-color: #ffffff !important;
     border-radius: 0 !important;
+}
+// --------------------------------------------------------------------- section .why-lease
+
+.why-lease {
+    padding-top: 150px;
+}
+
+.why-lease__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.why-lease__item-img {
+    margin-bottom: 30px;
+}
+
+.why-lease__item-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-lease__item-text {
+    text-align: left;
+}
+// --------------------------------------------------------------------- section how-does
+.how-does {
+    padding: 150px 0;
+}
+
+.how-does__inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how-does__text {
+}
+
+.how-does__title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how-does__list {
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+.how-does__item {
+    position: relative;
+    box-sizing: content-box;
+    width: 270px;
+    margin-left: auto;
+    min-height: 63px;
+    padding: 19px 0 19px 240px;
+}
+.how-does__item + .how-does__item {
+    margin-top: 40px;
+}
+.how-does__item::before {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    background-color: #0066ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    left: 0;
+    top: 0;
+}
+
+// --------------------------------------------------------------------- section video
+.video {
+    padding-bottom: 150px;
+}
+
+.video__title {
+    margin-bottom: 20px;
+}
+
+.video__text {
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.video__content {
+    display: block;
+    margin: 0 auto;
+}
+// --------------------------------------------------------------------- section important
+.important {
+    padding-bottom: 150px;
+}
+
+.important__text {
+    max-width: 580px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.important__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.important__item-img {
+    padding-bottom: 20px;
+}
+
+.important__item-text {
+    max-width: 270px;
 }
