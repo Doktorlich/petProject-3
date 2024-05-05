@@ -7,8 +7,11 @@
 }
 //--------------------------------------------------------------------------------
 .footer__menu {
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
     margin-bottom: 50px;
 }
 .footer__menu-list {
@@ -38,7 +41,7 @@
 .footer__copy {
     max-width: 800px;
     font-size: 12px;
-       margin: 0 auto 30px;
+    margin: 0 auto 30px;
     text-align: center;
 }
 
@@ -50,4 +53,21 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+}
+@media (max-width: 768px) {
+    .footer__menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+       
+    }
+    .copy__nav-list,
+    .app {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .app{
+        margin-bottom: 20px;
+    }
 }

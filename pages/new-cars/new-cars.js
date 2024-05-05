@@ -16,6 +16,8 @@ const hiddenContent = function () {
     });
 };
 hiddenContent()
+
+//контент который должен быть виден по умолчанию
 tabItems[0].classList.add("tabs__btn-item--active");
 tabContents[0].classList.remove("hidden");
 

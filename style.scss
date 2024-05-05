@@ -1,9 +1,6 @@
-
 @import "./src/scss/variables.scss";
 @import "./src/scss/reset-style.scss";
 @import "normalize.css";
-
-
 
 @import "src/scss/header";
 @import "src/scss/footer";
@@ -13,8 +10,7 @@ html,
 body {
     height: 100%;
 }
-body {
- 
+* {
     font-size: 16px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
